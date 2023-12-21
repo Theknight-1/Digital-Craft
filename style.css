@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+html,body{
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #0f0d0d;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size:cover ;
+    mix-blend-mode: difference;
+}
+.page1{
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    padding-top: 12vw;
+}
+#nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 99;
+}
+#nav img{
+    height: 25px;
+    width: 25px;
+}
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+#nav #nav-part2 h4{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+#nav #nav-part2 h4:nth-child(1){
+    border-bottom: 1.3px solid #fff;
+}
+#nav #cir{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+.page1>h1{
+    font-size: 7rem;
+    font-weight: 300;
+    font-family: PP mori;
+    margin-left: 10vw;
+}
+.page1>h2{
+    font-size: 6rem;
+    font-weight: 100;
+    font-family: PP mori;
+    margin-left: 36vw;
+}
+.page1 video{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vw;
+    margin-bottom: 10px;
+    width: 60%;
+    display: block;
+}
+/* page 2 starts from here */
+.page2{
+    min-height: 90vh;
+    width: 100%;
+    background-color: #fff;
+    color: #000000;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #363636;
+}
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 300;
+}
+.page2-content{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page2-left{
+    width: 42%;
+}
+.page2-right{
+    width:25%;
+}
+.page2-left h2{
+    font-size: 3.6vw;
+    font-weight: 300;
+    line-height: 4vw;
+}
+.page2-right p{
+    font-size: 18px;
+}
+.page2-right button{
+    width: 100%;
+    padding: 4px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: bisque;
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 60px;
+}
+.page3 h1{
+    font-size: 7rem;
+    margin-left: 2rem;
+    font-weight: 300;
+    color: #000000;
+}
+.page3 .page3-part1{
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page3 .page3-part1 img{
+    height: 400px;
+    margin-top: 100px;
+    object-fit: cover;
+}
+.page3 .page3-part1 video{
+    height: 300px;
+    object-fit: cover;
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 150px 50px;
+    overflow: hidden;
+}
+.page4 .elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.text-div{
+    height: 135px;
+    overflow: hidden;
+}
+.page4 .elem h1{
+    font-size: 7.5vw;
+    font-weight: 300;
+    color: #fffefe;
+    transition: all ease-out 0.5s;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1){
+   left: 0;
+   width: 28%;
+}
+.elem img:nth-child(3){
+    right: 2%;
+    width: 25%;
+ }
+ .page5{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.box{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+
+}
+
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #EDBFFF;
+}
